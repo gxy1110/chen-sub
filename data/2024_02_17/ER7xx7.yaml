@@ -1,7 +1,7 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash.Meta
-# 创建时间：2024-02-19 15:12:33
+# 创建时间：2024-02-20 22:41:59
 # 使用模版：V2RaySE 默认模版
 # 节点数量：13
 ####################################
@@ -86,16 +86,16 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"2053(1)","type":"vless","server":"104.17.120.60","port":2053,"uuid":"10d09779-8b2d-466e-8158-63514e2e953d","tls":true,"servername":"bg.chenchenpazz.one","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"bg.chenchenpazz.one"}},"client-fingerprint":"randomized"}
-  - {"name":"2053(2)","type":"vless","server":"104.16.97.8","port":2053,"uuid":"10d09779-8b2d-466e-8158-63514e2e953d","tls":true,"servername":"bg.chenchenpazz.one","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"bg.chenchenpazz.one"}},"client-fingerprint":"randomized"}
+  - {"name":"2053(1)","type":"vless","server":"104.16.99.12","port":2053,"uuid":"10d09779-8b2d-466e-8158-63514e2e953d","tls":true,"servername":"bg.chenchenpazz.one","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"bg.chenchenpazz.one"}},"client-fingerprint":"randomized"}
+  - {"name":"2053(2)","type":"vless","server":"104.16.104.168","port":2053,"uuid":"10d09779-8b2d-466e-8158-63514e2e953d","tls":true,"servername":"bg.chenchenpazz.one","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"bg.chenchenpazz.one"}},"client-fingerprint":"randomized"}
   - {"name":"2053(3-低)","type":"vless","server":"193.122.125.174","port":2053,"uuid":"10d09779-8b2d-466e-8158-63514e2e953d","tls":true,"servername":"bg.chenchenpazz.one","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"bg.chenchenpazz.one"}},"client-fingerprint":"randomized"}
-  - {"name":"2053(4)","type":"vless","server":"104.17.122.108","port":2053,"uuid":"10d09779-8b2d-466e-8158-63514e2e953d","tls":true,"servername":"bg.chenchenpazz.one","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"bg.chenchenpazz.one"}},"client-fingerprint":"randomized"}
-  - {"name":"2053(5-低)","type":"vless","server":"47.74.26.132","port":2053,"uuid":"10d09779-8b2d-466e-8158-63514e2e953d","tls":true,"servername":"bg.chenchenpazz.one","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"bg.chenchenpazz.one"}},"client-fingerprint":"randomized"}
-  - {"name":"2096(1)","type":"vless","server":"104.16.2.32","port":2096,"uuid":"10d09779-8b2d-466e-8158-63514e2e953d","tls":true,"servername":"bg.chenchenpazz.one","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"bg.chenchenpazz.one"}},"client-fingerprint":"randomized"}
-  - {"name":"2096(2)","type":"vless","server":"104.16.4.50","port":2096,"uuid":"10d09779-8b2d-466e-8158-63514e2e953d","tls":true,"servername":"bg.chenchenpazz.one","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"bg.chenchenpazz.one"}},"client-fingerprint":"randomized"}
-  - {"name":"2096(3)","type":"vless","server":"104.18.16.161","port":2096,"uuid":"10d09779-8b2d-466e-8158-63514e2e953d","tls":true,"servername":"bg.chenchenpazz.one","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"bg.chenchenpazz.one"}},"client-fingerprint":"randomized"}
-  - {"name":"2096(4-低)","type":"vless","server":"47.245.29.126","port":2096,"uuid":"10d09779-8b2d-466e-8158-63514e2e953d","tls":true,"servername":"bg.chenchenpazz.one","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"bg.chenchenpazz.one"}},"client-fingerprint":"randomized"}
-  - {"name":"2096(5-低)","type":"vless","server":"47.245.39.49","port":2096,"uuid":"10d09779-8b2d-466e-8158-63514e2e953d","tls":true,"servername":"bg.chenchenpazz.one","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"bg.chenchenpazz.one"}},"client-fingerprint":"randomized"}
+  - {"name":"2053(4)","type":"vless","server":"104.16.97.32","port":2053,"uuid":"10d09779-8b2d-466e-8158-63514e2e953d","tls":true,"servername":"bg.chenchenpazz.one","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"bg.chenchenpazz.one"}},"client-fingerprint":"randomized"}
+  - {"name":"2053(5-低)","type":"vless","server":"47.91.22.105","port":2053,"uuid":"10d09779-8b2d-466e-8158-63514e2e953d","tls":true,"servername":"bg.chenchenpazz.one","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"bg.chenchenpazz.one"}},"client-fingerprint":"randomized"}
+  - {"name":"2096(1)","type":"vless","server":"104.18.112.37","port":2096,"uuid":"10d09779-8b2d-466e-8158-63514e2e953d","tls":true,"servername":"bg.chenchenpazz.one","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"bg.chenchenpazz.one"}},"client-fingerprint":"randomized"}
+  - {"name":"2096(2)","type":"vless","server":"104.20.63.193","port":2096,"uuid":"10d09779-8b2d-466e-8158-63514e2e953d","tls":true,"servername":"bg.chenchenpazz.one","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"bg.chenchenpazz.one"}},"client-fingerprint":"randomized"}
+  - {"name":"2096(3)","type":"vless","server":"104.18.113.71","port":2096,"uuid":"10d09779-8b2d-466e-8158-63514e2e953d","tls":true,"servername":"bg.chenchenpazz.one","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"bg.chenchenpazz.one"}},"client-fingerprint":"randomized"}
+  - {"name":"2096(4-低)","type":"vless","server":"47.91.22.105","port":2096,"uuid":"10d09779-8b2d-466e-8158-63514e2e953d","tls":true,"servername":"bg.chenchenpazz.one","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"bg.chenchenpazz.one"}},"client-fingerprint":"randomized"}
+  - {"name":"2096(5-低)","type":"vless","server":"47.91.22.105","port":2096,"uuid":"10d09779-8b2d-466e-8158-63514e2e953d","tls":true,"servername":"bg.chenchenpazz.one","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"bg.chenchenpazz.one"}},"client-fingerprint":"randomized"}
   - {"name":"443(1)","type":"vless","server":"162.159.34.63","port":443,"uuid":"10d09779-8b2d-466e-8158-63514e2e953d","tls":true,"servername":"bg.chenchenpazz.one","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"bg.chenchenpazz.one"}},"client-fingerprint":"randomized"}
   - {"name":"443(2)","type":"vless","server":"162.159.35.145","port":443,"uuid":"10d09779-8b2d-466e-8158-63514e2e953d","tls":true,"servername":"bg.chenchenpazz.one","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"bg.chenchenpazz.one"}},"client-fingerprint":"randomized"}
   - {"name":"443(3)","type":"vless","server":"104.18.24.15","port":443,"uuid":"10d09779-8b2d-466e-8158-63514e2e953d","tls":true,"servername":"bg.chenchenpazz.one","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"bg.chenchenpazz.one"}},"client-fingerprint":"randomized"}
