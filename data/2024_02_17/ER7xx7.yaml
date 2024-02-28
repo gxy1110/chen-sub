@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash.Meta
-# 创建时间：2024-02-21 22:47:50
+# 创建时间：2024-02-28 17:30:39
 # 使用模版：V2RaySE 默认模版
-# 节点数量：13
+# 节点数量：2
 ####################################
 # !!当前配置文件请使用基于 Clash.Meta 内核程序
 mixed-port: 7890
@@ -86,130 +86,53 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"2053(1)","type":"vless","server":"104.19.184.151","port":2053,"uuid":"10d09779-8b2d-466e-8158-63514e2e953d","tls":true,"servername":"bg.chenchenpazz.one","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"bg.chenchenpazz.one"}},"client-fingerprint":"randomized"}
-  - {"name":"2053(2)","type":"vless","server":"104.19.136.90","port":2053,"uuid":"10d09779-8b2d-466e-8158-63514e2e953d","tls":true,"servername":"bg.chenchenpazz.one","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"bg.chenchenpazz.one"}},"client-fingerprint":"randomized"}
-  - {"name":"2053(3-低)","type":"vless","server":"193.122.125.174","port":2053,"uuid":"10d09779-8b2d-466e-8158-63514e2e953d","tls":true,"servername":"bg.chenchenpazz.one","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"bg.chenchenpazz.one"}},"client-fingerprint":"randomized"}
-  - {"name":"2053(4)","type":"vless","server":"172.67.214.55","port":2053,"uuid":"10d09779-8b2d-466e-8158-63514e2e953d","tls":true,"servername":"bg.chenchenpazz.one","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"bg.chenchenpazz.one"}},"client-fingerprint":"randomized"}
-  - {"name":"2053(5-低)","type":"vless","server":"47.91.22.105","port":2053,"uuid":"10d09779-8b2d-466e-8158-63514e2e953d","tls":true,"servername":"bg.chenchenpazz.one","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"bg.chenchenpazz.one"}},"client-fingerprint":"randomized"}
-  - {"name":"2096(1)","type":"vless","server":"104.16.174.82","port":2096,"uuid":"10d09779-8b2d-466e-8158-63514e2e953d","tls":true,"servername":"bg.chenchenpazz.one","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"bg.chenchenpazz.one"}},"client-fingerprint":"randomized"}
-  - {"name":"2096(2)","type":"vless","server":"104.16.178.205","port":2096,"uuid":"10d09779-8b2d-466e-8158-63514e2e953d","tls":true,"servername":"bg.chenchenpazz.one","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"bg.chenchenpazz.one"}},"client-fingerprint":"randomized"}
-  - {"name":"2096(3)","type":"vless","server":"104.16.172.214","port":2096,"uuid":"10d09779-8b2d-466e-8158-63514e2e953d","tls":true,"servername":"bg.chenchenpazz.one","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"bg.chenchenpazz.one"}},"client-fingerprint":"randomized"}
-  - {"name":"2096(4)","type":"vless","server":"104.16.181.179","port":2096,"uuid":"10d09779-8b2d-466e-8158-63514e2e953d","tls":true,"servername":"bg.chenchenpazz.one","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"bg.chenchenpazz.one"}},"client-fingerprint":"randomized"}
-  - {"name":"2096(5-低)","type":"vless","server":"47.91.22.105","port":2096,"uuid":"10d09779-8b2d-466e-8158-63514e2e953d","tls":true,"servername":"bg.chenchenpazz.one","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"bg.chenchenpazz.one"}},"client-fingerprint":"randomized"}
-  - {"name":"443(1)","type":"vless","server":"104.16.175.205","port":443,"uuid":"10d09779-8b2d-466e-8158-63514e2e953d","tls":true,"servername":"bg.chenchenpazz.one","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"bg.chenchenpazz.one"}},"client-fingerprint":"randomized"}
-  - {"name":"443(2)","type":"vless","server":"104.16.23.194","port":443,"uuid":"10d09779-8b2d-466e-8158-63514e2e953d","tls":true,"servername":"bg.chenchenpazz.one","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"bg.chenchenpazz.one"}},"client-fingerprint":"randomized"}
-  - {"name":"443(3)","type":"vless","server":"104.19.129.54","port":443,"uuid":"10d09779-8b2d-466e-8158-63514e2e953d","tls":true,"servername":"bg.chenchenpazz.one","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"bg.chenchenpazz.one"}},"client-fingerprint":"randomized"}
+  - {"name":"chenchen-vmesss-ws","type":"vmess","server":"xui.chenchenpazz.shop","port":2052,"cipher":"auto","uuid":"5f6a6b65-5d66-4f09-e544-0f0a3dd0f78b","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"xui.chenchenpazz.shop"}}}
+  - {"name":"chenchen-xtls-reality","type":"vless","server":"jp-tokyo-oracle-5c954d.ip1.shop","port":44480,"udp":true,"uuid":"502ebbe2-938a-47d1-9bdd-b88d3b1d4867","tls":true,"servername":"addons.mozilla.org","network":"tcp","reality-opts":{"public-key":"7iwXW5oEqr-AnvPngs5ePRuUrrucqaXRz7TRGNyQ32Q"},"client-fingerprint":"chrome"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 2053(1)
-      - 2053(2)
-      - 2053(3-低)
-      - 2053(4)
-      - 2053(5-低)
-      - 2096(1)
-      - 2096(2)
-      - 2096(3)
-      - 2096(4)
-      - 2096(5-低)
-      - 443(1)
-      - 443(2)
-      - 443(3)
+      - chenchen-vmesss-ws
+      - chenchen-xtls-reality
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 2053(1)
-      - 2053(2)
-      - 2053(3-低)
-      - 2053(4)
-      - 2053(5-低)
-      - 2096(1)
-      - 2096(2)
-      - 2096(3)
-      - 2096(4)
-      - 2096(5-低)
-      - 443(1)
-      - 443(2)
-      - 443(3)
+      - chenchen-vmesss-ws
+      - chenchen-xtls-reality
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 2053(1)
-      - 2053(2)
-      - 2053(3-低)
-      - 2053(4)
-      - 2053(5-低)
-      - 2096(1)
-      - 2096(2)
-      - 2096(3)
-      - 2096(4)
-      - 2096(5-低)
-      - 443(1)
-      - 443(2)
-      - 443(3)
+      - chenchen-vmesss-ws
+      - chenchen-xtls-reality
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 2053(1)
-      - 2053(2)
-      - 2053(3-低)
-      - 2053(4)
-      - 2053(5-低)
-      - 2096(1)
-      - 2096(2)
-      - 2096(3)
-      - 2096(4)
-      - 2096(5-低)
-      - 443(1)
-      - 443(2)
-      - 443(3)
+      - chenchen-vmesss-ws
+      - chenchen-xtls-reality
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 2053(1)
-      - 2053(2)
-      - 2053(3-低)
-      - 2053(4)
-      - 2053(5-低)
-      - 2096(1)
-      - 2096(2)
-      - 2096(3)
-      - 2096(4)
-      - 2096(5-低)
-      - 443(1)
-      - 443(2)
-      - 443(3)
+      - chenchen-vmesss-ws
+      - chenchen-xtls-reality
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 2053(1)
-      - 2053(2)
-      - 2053(3-低)
-      - 2053(4)
-      - 2053(5-低)
-      - 2096(1)
-      - 2096(2)
-      - 2096(3)
-      - 2096(4)
-      - 2096(5-低)
-      - 443(1)
-      - 443(2)
-      - 443(3)
+      - chenchen-vmesss-ws
+      - chenchen-xtls-reality
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -232,19 +155,8 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 2053(1)
-      - 2053(2)
-      - 2053(3-低)
-      - 2053(4)
-      - 2053(5-低)
-      - 2096(1)
-      - 2096(2)
-      - 2096(3)
-      - 2096(4)
-      - 2096(5-低)
-      - 443(1)
-      - 443(2)
-      - 443(3)
+      - chenchen-vmesss-ws
+      - chenchen-xtls-reality
 
 rules:
 # 本地/局域网地址
