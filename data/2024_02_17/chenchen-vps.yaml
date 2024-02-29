@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash.Meta
-# 创建时间：2024-02-29 21:53:34
+# 创建时间：2024-02-29 22:15:20
 # 使用模版：V2RaySE 默认模版
-# 节点数量：3
+# 节点数量：2
 ####################################
 # !!当前配置文件请使用基于 Clash.Meta 内核程序
 mixed-port: 7890
@@ -86,60 +86,53 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"chenchen123%20hysteria2","type":"hysteria2","server":"jp-tokyo-oracle-5c954d.ip1.shop","port":44481,"password":"502ebbe2-938a-47d1-9bdd-b88d3b1d4867","skip-cert-verify":true}
-  - {"name":"chenchen123 h2-reality","type":"vless","server":"jp-tokyo-oracle-5c954d.ip1.shop","port":44482,"udp":true,"uuid":"502ebbe2-938a-47d1-9bdd-b88d3b1d4867","tls":true,"servername":"addons.mozilla.org","network":"http","alpn":["h2"],"reality-opts":{"public-key":"7iwXW5oEqr-AnvPngs5ePRuUrrucqaXRz7TRGNyQ32Q"},"client-fingerprint":"chrome"}
-  - {"name":"chenchen123 grpc-reality","type":"vless","server":"jp-tokyo-oracle-5c954d.ip1.shop","port":44483,"udp":true,"uuid":"502ebbe2-938a-47d1-9bdd-b88d3b1d4867","tls":true,"servername":"addons.mozilla.org","network":"grpc","grpc-opts":{"grpc-service-name":"grpc"},"reality-opts":{"public-key":"7iwXW5oEqr-AnvPngs5ePRuUrrucqaXRz7TRGNyQ32Q"},"client-fingerprint":"chrome"}
+  - {"name":"chenchen-vmesss-ws","type":"vmess","server":"xui.chenchenpazz.shop","port":2052,"cipher":"auto","uuid":"5f6a6b65-5d66-4f09-e544-0f0a3dd0f78b","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"xui.chenchenpazz.shop"}}}
+  - {"name":"chenchen-xtls-reality","type":"vless","server":"jp-tokyo-oracle-5c954d.ip1.shop","port":44480,"udp":true,"uuid":"502ebbe2-938a-47d1-9bdd-b88d3b1d4867","tls":true,"servername":"addons.mozilla.org","network":"tcp","reality-opts":{"public-key":"7iwXW5oEqr-AnvPngs5ePRuUrrucqaXRz7TRGNyQ32Q"},"client-fingerprint":"chrome"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - chenchen123%20hysteria2
-      - chenchen123 h2-reality
-      - chenchen123 grpc-reality
+      - chenchen-vmesss-ws
+      - chenchen-xtls-reality
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - chenchen123%20hysteria2
-      - chenchen123 h2-reality
-      - chenchen123 grpc-reality
+      - chenchen-vmesss-ws
+      - chenchen-xtls-reality
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - chenchen123%20hysteria2
-      - chenchen123 h2-reality
-      - chenchen123 grpc-reality
+      - chenchen-vmesss-ws
+      - chenchen-xtls-reality
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - chenchen123%20hysteria2
-      - chenchen123 h2-reality
-      - chenchen123 grpc-reality
+      - chenchen-vmesss-ws
+      - chenchen-xtls-reality
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - chenchen123%20hysteria2
-      - chenchen123 h2-reality
-      - chenchen123 grpc-reality
+      - chenchen-vmesss-ws
+      - chenchen-xtls-reality
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - chenchen123%20hysteria2
-      - chenchen123 h2-reality
-      - chenchen123 grpc-reality
+      - chenchen-vmesss-ws
+      - chenchen-xtls-reality
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -162,9 +155,8 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - chenchen123%20hysteria2
-      - chenchen123 h2-reality
-      - chenchen123 grpc-reality
+      - chenchen-vmesss-ws
+      - chenchen-xtls-reality
 
 rules:
 # 本地/局域网地址
