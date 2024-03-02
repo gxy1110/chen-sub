@@ -3,3 +3,4 @@ vless://502ebbe2-938a-47d1-9bdd-b88d3b1d4867@jp-tokyo-oracle-5c954d.ip1.shop:444
 hy2://502ebbe2-938a-47d1-9bdd-b88d3b1d4867@jp-tokyo-oracle-5c954d.ip1.shop:44481/?insecure=1#chenchen123%20hysteria2
 vless://502ebbe2-938a-47d1-9bdd-b88d3b1d4867@jp-tokyo-oracle-5c954d.ip1.shop:44482?security=reality&sni=addons.mozilla.org&alpn=h2&fp=chrome&pbk=7iwXW5oEqr-AnvPngs5ePRuUrrucqaXRz7TRGNyQ32Q&type=http&encryption=none#chenchen123%20h2-reality
 vless://502ebbe2-938a-47d1-9bdd-b88d3b1d4867@jp-tokyo-oracle-5c954d.ip1.shop:44483?security=reality&sni=addons.mozilla.org&fp=chrome&pbk=7iwXW5oEqr-AnvPngs5ePRuUrrucqaXRz7TRGNyQ32Q&type=grpc&serviceName=grpc&encryption=none#chenchen123%20grpc-reality
+vless://4d6ba690-810e-4b02-dfc9-4c336b8aa8f4@jp-tokyo-oracle-5c954d.ip1.shop:44459?encryption=none&flow=xtls-rprx-vision&security=reality&sni=my.carbide3d.com&fp=chrome&pbk=UK7qxWWGfRQcQfwaGpHnqmmqqJBut4jxve8AeDDJ2UI&type=tcp&headerType=none#chenchen-xtls-rprx-vision-reality
