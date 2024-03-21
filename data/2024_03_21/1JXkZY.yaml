@@ -16,9 +16,14 @@ dns:
     fallback-filter: { geo: [240.0.0.0/4, 0.0.0.0/32] }
 proxies:
     - { name: '共享socks', type: socks5, server: 192.168.137.1, port: 2516 }
-    - { name: 'hk_ipv4_h2_re', type: vless, server: 5.102.96.80, port: 38001, udp: true, uuid: f7650ffa-df29-49db-b3ab-d8690ab4227b, tls: true, servername: addons.mozilla.org, flow: xtls-rprx-vision, network: http, reality-opts: { public-key: 9XKrMzYEWNfs2KjYdVkEVpZbHHEycPYvmC7_n1JZaig }, client-fingerprint: chrome }
+    - {name: "v6 chenchen xtls-reality", type: vless, server: 2400:8a20:124:124::ba, port: 50000, uuid: 795e6319-1230-4027-a98d-0a2564e06773, network: tcp, udp: true, tls: true, servername: addons.mozilla.org, client-fingerprint: chrome, reality-opts: {public-key: xWoVcy4-i2cA8NEKXruQCXLpx1WL9hCwAfR2S7ZU3zg, short-id: ""}, smux: { enabled: true, protocol: 'h2mux', padding: true, max-connections: '8', min-streams: '16', statistic: true, only-tcp: false } }
+    - {name: "v6 chenchen hysteria2", type: hysteria2, server: 2400:8a20:124:124::ba, port: 50001, up: "200 Mbps", down: "1000 Mbps", password: 795e6319-1230-4027-a98d-0a2564e06773, skip-cert-verify: true}
+    - {name: "v6 chenchen grpc-reality", type: vless, server: 2400:8a20:124:124::ba, port: 50003, uuid: 795e6319-1230-4027-a98d-0a2564e06773, network: grpc, tls: true, udp: true, flow:, client-fingerprint: chrome, servername: addons.mozilla.org, grpc-opts: {  grpc-service-name: "grpc" }, reality-opts: { public-key: xWoVcy4-i2cA8NEKXruQCXLpx1WL9hCwAfR2S7ZU3zg, short-id: "" }, smux: { enabled: true, protocol: 'h2mux', padding: true, max-connections: '8', min-streams: '16', statistic: true, only-tcp: false } }
+    - {name: "v4 chenchen xtls-reality", type: vless, server: 5.102.96.80, port: 38000, uuid: f7650ffa-df29-49db-b3ab-d8690ab4227b, network: tcp, udp: true, tls: true, servername: addons.mozilla.org, client-fingerprint: chrome, reality-opts: {public-key: 9XKrMzYEWNfs2KjYdVkEVpZbHHEycPYvmC7_n1JZaig, short-id: ""}, smux: { enabled: true, protocol: 'h2mux', padding: true, max-connections: '8', min-streams: '16', statistic: true, only-tcp: false } }
+    - {name: "v4 chenchen grpc-reality", type: vless, server: 5.102.96.80, port: 38002, uuid: f7650ffa-df29-49db-b3ab-d8690ab4227b, network: grpc, tls: true, udp: true, flow:, client-fingerprint: chrome, servername: addons.mozilla.org, grpc-opts: {  grpc-service-name: "grpc" }, reality-opts: { public-key: 9XKrMzYEWNfs2KjYdVkEVpZbHHEycPYvmC7_n1JZaig, short-id: "" }, smux: { enabled: true, protocol: 'h2mux', padding: true, max-connections: '8', min-streams: '16', statistic: true, only-tcp: false } }
+
 proxy-groups:
-    - { name: '🚀 节点选择', type: select, proxies: ['共享socks', 'hk_ipv4_h2_re'] }
+    - { name: '🚀 节点选择', type: select, proxies: ['共享socks', 'v6 chenchen xtls-reality', 'v6 chenchen hysteria2', 'v6 chenchen grpc-reality', 'v4 chenchen xtls-reality', 'v4 chenchen grpc-reality'] }
 rules:
     - 'DOMAIN,gawrgura.moe,DIRECT'
     - 'GEOIP,CN,🇨🇳 中国大陆'
