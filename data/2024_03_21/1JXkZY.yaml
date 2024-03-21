@@ -16,8 +16,9 @@ dns:
     fallback-filter: { geo: [240.0.0.0/4, 0.0.0.0/32] }
 proxies:
     - { name: '共享socks', type: socks5, server: 192.168.137.1, port: 2516 }
+    - { name: 'hk_ipv4_h2_re', type: vless, server: 5.102.96.80, port: 38001, udp: true, uuid: f7650ffa-df29-49db-b3ab-d8690ab4227b, tls: true, servername: addons.mozilla.org, flow: xtls-rprx-vision, network: http, reality-opts: { public-key: 9XKrMzYEWNfs2KjYdVkEVpZbHHEycPYvmC7_n1JZaig }, client-fingerprint: chrome }
 proxy-groups:
-    - { name: '🚀 节点选择', type: select, proxies: ['共享socks'] }
+    - { name: '🚀 节点选择', type: select, proxies: ['共享socks', 'hk_ipv4_h2_re'] }
 rules:
     - 'DOMAIN,gawrgura.moe,DIRECT'
     - 'GEOIP,CN,🇨🇳 中国大陆'
