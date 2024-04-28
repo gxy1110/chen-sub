@@ -16,6 +16,7 @@ dns:
     fallback-filter: { geo: [240.0.0.0/4, 0.0.0.0/32] }
 proxies:
     - { name: '共享socks', type: socks5, server: 192.168.137.1, port: 2516 }
+    - { name: '远程socks', type: socks5, server: 10.2.4.60, port: 2516 }
     - {name: "hk chenchen xtls-reality", type: vless, server: 5.102.96.7, port: 30000, uuid: 242f4443-dce4-4f7c-9002-3ab51c83ea63, network: tcp, udp: true, tls: true, servername: addons.mozilla.org, client-fingerprint: chrome, reality-opts: {public-key: VCVC-LJmVGYzpYyC6j5of3Ea54O3hJXi9EddAep3Tkw, short-id: ""}, smux: { enabled: true, protocol: 'h2mux', padding: true, max-connections: '8', min-streams: '16', statistic: true, only-tcp: false } }
     - {name: "hk chenchen hysteria2", type: hysteria2, server: 5.102.96.7, port: 30001, up: "1000 Mbps", down: "1000 Mbps", password: 242f4443-dce4-4f7c-9002-3ab51c83ea63, skip-cert-verify: true}
     - {name: "hk chenchen grpc-reality", type: vless, server: 5.102.96.7, port: 30003, uuid: 242f4443-dce4-4f7c-9002-3ab51c83ea63, network: grpc, tls: true, udp: true, flow:, client-fingerprint: chrome, servername: addons.mozilla.org, grpc-opts: {  grpc-service-name: "grpc" }, reality-opts: { public-key: VCVC-LJmVGYzpYyC6j5of3Ea54O3hJXi9EddAep3Tkw, short-id: "" }, smux: { enabled: true, protocol: 'h2mux', padding: true, max-connections: '8', min-streams: '16', statistic: true, only-tcp: false } }
@@ -31,7 +32,7 @@ proxies:
     - {name: "fbi", server: fbi.gov, port: 443, client-fingerprint: random, type: vless, uuid: 10d09779-8b2d-466e-8158-63514e2e953d, tls: true, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: bg.chenchenpazz.one} } }
 
 proxy-groups:
-    - { name: '🚀 节点选择', type: select, proxies: ['共享socks', 'hk chenchen xtls-reality', 'hk chenchen hysteria2', 'hk chenchen grpc-reality', 'hk v6 chenchen xtls-reality', 'hk v6 chenchen hysteria2', 'hk v6 chenchen grpc-reality', 'jp chenchen xtls-reality', 'jp chenchen hysteria2', 'jp chenchen grpc-reality', 'jp v6 chenchen xtls-reality', 'jp v6 chenchen hysteria2', 'jp v6 chenchen grpc-reality', 'fbi'] }
+    - { name: '🚀 节点选择', type: select, proxies: ['共享socks', '远程socks', 'hk chenchen xtls-reality', 'hk chenchen hysteria2', 'hk chenchen grpc-reality', 'hk v6 chenchen xtls-reality', 'hk v6 chenchen hysteria2', 'hk v6 chenchen grpc-reality', 'jp chenchen xtls-reality', 'jp chenchen hysteria2', 'jp chenchen grpc-reality', 'jp v6 chenchen xtls-reality', 'jp v6 chenchen hysteria2', 'jp v6 chenchen grpc-reality', 'fbi'] }
 rules:
     - 'DOMAIN,gawrgura.moe,DIRECT'
     - 'GEOIP,CN,🇨🇳 中国大陆'
