@@ -1,11 +1,10 @@
 ####################################
 # 创建者：v2rayse.com
-# 客户端：Clash.Meta
-# 创建时间：2024-05-02 22:53:46
+# 客户端：Clash
+# 创建时间：2024-05-02 23:12:20
 # 使用模版：V2RaySE 默认模版
-# 节点数量：11
+# 节点数量：2
 ####################################
-# !!当前配置文件请使用基于 Clash.Meta 内核程序
 mixed-port: 7890
 allow-lan: true
 log-level: info
@@ -88,15 +87,6 @@ dns:
 proxies:
   - {"name":"远程socks","type":"socks5","server":"10.2.4.60","port":2516}
   - {"name":"本地socks","type":"socks5","server":"192.168.137.1","port":2516}
-  - {"name":"chenchen xtls-reality_1","type":"vless","server":"5.102.96.7","port":30000,"udp":true,"uuid":"242f4443-dce4-4f7c-9002-3ab51c83ea63","tls":true,"servername":"addons.mozilla.org","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"VCVC-LJmVGYzpYyC6j5of3Ea54O3hJXi9EddAep3Tkw"},"client-fingerprint":"chrome"}
-  - {"name":"chenchen hysteria2_1","type":"hysteria2","server":"5.102.96.7","port":30001,"password":"242f4443-dce4-4f7c-9002-3ab51c83ea63","skip-cert-verify":true}
-  - {"name":"chenchen h2-reality_1","type":"vless","server":"5.102.96.7","port":30002,"udp":true,"uuid":"242f4443-dce4-4f7c-9002-3ab51c83ea63","tls":true,"servername":"addons.mozilla.org","flow":"xtls-rprx-vision","network":"http","reality-opts":{"public-key":"VCVC-LJmVGYzpYyC6j5of3Ea54O3hJXi9EddAep3Tkw"},"client-fingerprint":"chrome"}
-  - {"name":"chenchen grpc-reality_1","type":"vless","server":"5.102.96.7","port":30003,"udp":true,"uuid":"242f4443-dce4-4f7c-9002-3ab51c83ea63","tls":true,"servername":"addons.mozilla.org","flow":"xtls-rprx-vision","network":"grpc","grpc-opts":{"grpc-service-name":"grpc"},"reality-opts":{"public-key":"VCVC-LJmVGYzpYyC6j5of3Ea54O3hJXi9EddAep3Tkw"},"client-fingerprint":"chrome"}
-  - {"name":"chenchen xtls-reality_2","type":"vless","server":"[2401","port":null,"udp":true,"uuid":"242f4443-dce4-4f7c-9002-3ab51c83ea63","tls":true,"servername":"addons.mozilla.org","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"VCVC-LJmVGYzpYyC6j5of3Ea54O3hJXi9EddAep3Tkw"},"client-fingerprint":"chrome"}
-  - {"name":"chenchen hysteria2_2","type":"hysteria2","server":"[2401","port":null,"password":"242f4443-dce4-4f7c-9002-3ab51c83ea63","skip-cert-verify":true}
-  - {"name":"chenchen h2-reality_2","type":"vless","server":"[2401","port":null,"udp":true,"uuid":"242f4443-dce4-4f7c-9002-3ab51c83ea63","tls":true,"servername":"addons.mozilla.org","flow":"xtls-rprx-vision","network":"http","reality-opts":{"public-key":"VCVC-LJmVGYzpYyC6j5of3Ea54O3hJXi9EddAep3Tkw"},"client-fingerprint":"chrome"}
-  - {"name":"chenchen grpc-reality_2","type":"vless","server":"[2401","port":null,"udp":true,"uuid":"242f4443-dce4-4f7c-9002-3ab51c83ea63","tls":true,"servername":"addons.mozilla.org","flow":"xtls-rprx-vision","network":"grpc","grpc-opts":{"grpc-service-name":"grpc"},"reality-opts":{"public-key":"VCVC-LJmVGYzpYyC6j5of3Ea54O3hJXi9EddAep3Tkw"},"client-fingerprint":"chrome"}
-  - {"name":"ss","type":"ss","server":"[2401","port":48832}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -105,15 +95,6 @@ proxy-groups:
       - DIRECT
       - 远程socks
       - 本地socks
-      - chenchen xtls-reality_1
-      - chenchen hysteria2_1
-      - chenchen h2-reality_1
-      - chenchen grpc-reality_1
-      - chenchen xtls-reality_2
-      - chenchen hysteria2_2
-      - chenchen h2-reality_2
-      - chenchen grpc-reality_2
-      - ss
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -122,15 +103,6 @@ proxy-groups:
     proxies:
       - 远程socks
       - 本地socks
-      - chenchen xtls-reality_1
-      - chenchen hysteria2_1
-      - chenchen h2-reality_1
-      - chenchen grpc-reality_1
-      - chenchen xtls-reality_2
-      - chenchen hysteria2_2
-      - chenchen h2-reality_2
-      - chenchen grpc-reality_2
-      - ss
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -139,15 +111,6 @@ proxy-groups:
       - 🎯 全球直连
       - 远程socks
       - 本地socks
-      - chenchen xtls-reality_1
-      - chenchen hysteria2_1
-      - chenchen h2-reality_1
-      - chenchen grpc-reality_1
-      - chenchen xtls-reality_2
-      - chenchen hysteria2_2
-      - chenchen h2-reality_2
-      - chenchen grpc-reality_2
-      - ss
   - name: 📲 电报信息
     type: select
     proxies:
@@ -155,15 +118,6 @@ proxy-groups:
       - 🎯 全球直连
       - 远程socks
       - 本地socks
-      - chenchen xtls-reality_1
-      - chenchen hysteria2_1
-      - chenchen h2-reality_1
-      - chenchen grpc-reality_1
-      - chenchen xtls-reality_2
-      - chenchen hysteria2_2
-      - chenchen h2-reality_2
-      - chenchen grpc-reality_2
-      - ss
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
@@ -171,15 +125,6 @@ proxy-groups:
       - 🚀 节点选择
       - 远程socks
       - 本地socks
-      - chenchen xtls-reality_1
-      - chenchen hysteria2_1
-      - chenchen h2-reality_1
-      - chenchen grpc-reality_1
-      - chenchen xtls-reality_2
-      - chenchen hysteria2_2
-      - chenchen h2-reality_2
-      - chenchen grpc-reality_2
-      - ss
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -187,15 +132,6 @@ proxy-groups:
       - 🎯 全球直连
       - 远程socks
       - 本地socks
-      - chenchen xtls-reality_1
-      - chenchen hysteria2_1
-      - chenchen h2-reality_1
-      - chenchen grpc-reality_1
-      - chenchen xtls-reality_2
-      - chenchen hysteria2_2
-      - chenchen h2-reality_2
-      - chenchen grpc-reality_2
-      - ss
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -220,15 +156,6 @@ proxy-groups:
       - ♻️ 自动选择
       - 远程socks
       - 本地socks
-      - chenchen xtls-reality_1
-      - chenchen hysteria2_1
-      - chenchen h2-reality_1
-      - chenchen grpc-reality_1
-      - chenchen xtls-reality_2
-      - chenchen hysteria2_2
-      - chenchen h2-reality_2
-      - chenchen grpc-reality_2
-      - ss
 
 rules:
 # 本地/局域网地址
