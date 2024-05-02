@@ -1,7 +1,7 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash
-# 创建时间：2024-05-02 23:12:20
+# 创建时间：2024-05-02 23:17:52
 # 使用模版：V2RaySE 默认模版
 # 节点数量：2
 ####################################
@@ -85,53 +85,53 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"远程socks","type":"socks5","server":"10.2.4.60","port":2516}
-  - {"name":"本地socks","type":"socks5","server":"192.168.137.1","port":2516}
+  - {"name":"defaultName_1","type":"socks5","server":"10.2.4.60","port":2516}
+  - {"name":"defaultName_2","type":"socks5","server":"192.168.137.1","port":2516}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 远程socks
-      - 本地socks
+      - defaultName_1
+      - defaultName_2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 远程socks
-      - 本地socks
+      - defaultName_1
+      - defaultName_2
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 远程socks
-      - 本地socks
+      - defaultName_1
+      - defaultName_2
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 远程socks
-      - 本地socks
+      - defaultName_1
+      - defaultName_2
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 远程socks
-      - 本地socks
+      - defaultName_1
+      - defaultName_2
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 远程socks
-      - 本地socks
+      - defaultName_1
+      - defaultName_2
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -154,8 +154,8 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 远程socks
-      - 本地socks
+      - defaultName_1
+      - defaultName_2
 
 rules:
 # 本地/局域网地址
