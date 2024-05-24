@@ -1,10 +1,3 @@
-####################################
-# 创建者：v2rayse.com
-# 客户端：Clash
-# 创建时间：2024-05-02 23:17:52
-# 使用模版：V2RaySE 默认模版
-# 节点数量：2
-####################################
 mixed-port: 7890
 allow-lan: true
 log-level: info
@@ -85,53 +78,95 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"defaultName_1","type":"socks5","server":"10.2.4.60","port":2516}
-  - {"name":"defaultName_2","type":"socks5","server":"192.168.137.1","port":2516}
+  - {"name":"chenchen xtls-reality","type":"vless","server":"5.102.96.7","port":30000,"udp":true,"uuid":"242f4443-dce4-4f7c-9002-3ab51c83ea63","tls":true,"servername":"addons.mozilla.org","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"VCVC-LJmVGYzpYyC6j5of3Ea54O3hJXi9EddAep3Tkw"},"client-fingerprint":"chrome"}
+  - {"name":"chenchen hysteria2","type":"hysteria2","server":"5.102.96.7","port":30001,"password":"242f4443-dce4-4f7c-9002-3ab51c83ea63","skip-cert-verify":true,"alpn":["h3"]}
+  - {"name":"chenchen grpc-reality","type":"vless","server":"5.102.96.7","port":30003,"udp":true,"uuid":"242f4443-dce4-4f7c-9002-3ab51c83ea63","tls":true,"servername":"addons.mozilla.org","flow":"xtls-rprx-vision","network":"grpc","grpc-opts":{"grpc-service-name":"grpc"},"reality-opts":{"public-key":"VCVC-LJmVGYzpYyC6j5of3Ea54O3hJXi9EddAep3Tkw"},"client-fingerprint":"chrome"}
+  - {"name":"chenchen xtls-reality v6","type":"vless","server":"2401:b60:10:a2c::1","port":30000,"udp":true,"uuid":"242f4443-dce4-4f7c-9002-3ab51c83ea63","tls":true,"servername":"addons.mozilla.org","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"VCVC-LJmVGYzpYyC6j5of3Ea54O3hJXi9EddAep3Tkw"},"client-fingerprint":"chrome"}
+  - {"name":"chenchen hysteria2 v6","type":"hysteria2","server":"2401:b60:10:a2c::1","port":30001,"password":"242f4443-dce4-4f7c-9002-3ab51c83ea63","skip-cert-verify":true,"alpn":["h3"]}
+  - {"name":"chenchen grpc-reality v6","type":"vless","server":"2401:b60:10:a2c::1","port":30003,"udp":true,"uuid":"242f4443-dce4-4f7c-9002-3ab51c83ea63","tls":true,"servername":"addons.mozilla.org","flow":"xtls-rprx-vision","network":"grpc","grpc-opts":{"grpc-service-name":"grpc"},"reality-opts":{"public-key":"VCVC-LJmVGYzpYyC6j5of3Ea54O3hJXi9EddAep3Tkw"},"client-fingerprint":"chrome"}
+  - {"name":"远程socks","type":"socks5","server":"10.2.4.60","port":2516}
+  - {"name":"本地socks","type":"socks5","server":"192.168.137.1","port":2516} 
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - defaultName_1
-      - defaultName_2
+      - chenchen xtls-reality
+      - chenchen hysteria2
+      - chenchen grpc-reality
+      - chenchen xtls-reality v6
+      - chenchen hysteria2 v6
+      - chenchen grpc-reality v6
+      - 远程socks 
+      - 本地socks
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - defaultName_1
-      - defaultName_2
+      - chenchen xtls-reality
+      - chenchen hysteria2
+      - chenchen grpc-reality
+      - chenchen xtls-reality v6
+      - chenchen hysteria2 v6
+      - chenchen grpc-reality v6
+      - 远程socks 
+      - 本地socks
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - defaultName_1
-      - defaultName_2
+      - chenchen xtls-reality
+      - chenchen hysteria2
+      - chenchen grpc-reality
+      - chenchen xtls-reality v6
+      - chenchen hysteria2 v6
+      - chenchen grpc-reality v6
+      - 远程socks 
+      - 本地socks
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - defaultName_1
-      - defaultName_2
+      - chenchen xtls-reality
+      - chenchen hysteria2
+      - chenchen grpc-reality
+      - chenchen xtls-reality v6
+      - chenchen hysteria2 v6
+      - chenchen grpc-reality v6
+      - 远程socks 
+      - 本地socks
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - defaultName_1
-      - defaultName_2
+      - chenchen xtls-reality
+      - chenchen hysteria2
+      - chenchen grpc-reality
+      - chenchen xtls-reality v6
+      - chenchen hysteria2 v6
+      - chenchen grpc-reality v6
+      - 远程socks 
+      - 本地socks
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - defaultName_1
-      - defaultName_2
+      - chenchen xtls-reality
+      - chenchen hysteria2
+      - chenchen grpc-reality
+      - chenchen xtls-reality v6
+      - chenchen hysteria2 v6
+      - chenchen grpc-reality v6
+      - 远程socks 
+      - 本地socks
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -154,8 +189,14 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - defaultName_1
-      - defaultName_2
+      - chenchen xtls-reality
+      - chenchen hysteria2
+      - chenchen grpc-reality
+      - chenchen xtls-reality v6
+      - chenchen hysteria2 v6
+      - chenchen grpc-reality v6
+      - 远程socks 
+      - 本地socks
 
 rules:
 # 本地/局域网地址
