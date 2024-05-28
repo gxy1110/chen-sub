@@ -1,8 +1,3 @@
-vless://dea0a701-ab3e-41a0-a0ff-14fbaf62cb4c@jp-tokyo-oracle-5c954d.ip1.shop:39303?security=reality&sni=addons.mozilla.org&fp=chrome&pbk=D9D_7OvjXxEzfP10ZkhylVOhpjHAgbbujABvqEOoeEM&type=tcp&encryption=none#chenchen%20xtls-reality
-hy2://dea0a701-ab3e-41a0-a0ff-14fbaf62cb4c@jp-tokyo-oracle-5c954d.ip1.shop:39304?mport=39335-39350&insecure=1#chenchen hysteria2
-ss://YWVzLTEyOC1nY206ZGVhMGE3MDEtYWIzZS00MWEwLWEwZmYtMTRmYmFmNjJjYjRj@jp-tokyo-oracle-5c954d.ip1.shop:39305#chenchen shadowsocks
-vless://dea0a701-ab3e-41a0-a0ff-14fbaf62cb4c@jp-tokyo-oracle-5c954d.ip1.shop:39306?security=reality&sni=addons.mozilla.org&alpn=h2&fp=chrome&pbk=D9D_7OvjXxEzfP10ZkhylVOhpjHAgbbujABvqEOoeEM&type=http&encryption=none#chenchen%20h2-reality
-vless://dea0a701-ab3e-41a0-a0ff-14fbaf62cb4c@jp-tokyo-oracle-5c954d.ip1.shop:39307?security=reality&sni=addons.mozilla.org&fp=chrome&pbk=D9D_7OvjXxEzfP10ZkhylVOhpjHAgbbujABvqEOoeEM&type=grpc&serviceName=grpc&encryption=none#chenchen%20grpc-reality
 vless://dea0a701-ab3e-41a0-a0ff-14fbaf62cb4c@[2603:c021:8010:4200:c400:e981:1f05:7331]:39303?security=reality&sni=addons.mozilla.org&fp=chrome&pbk=D9D_7OvjXxEzfP10ZkhylVOhpjHAgbbujABvqEOoeEM&type=tcp&encryption=none#chenchen%20xtls-reality
 hy2://dea0a701-ab3e-41a0-a0ff-14fbaf62cb4c@[2603:c021:8010:4200:c400:e981:1f05:7331]:39304?mport=39335-39350&insecure=1#chenchen hysteria2
 ss://YWVzLTEyOC1nY206ZGVhMGE3MDEtYWIzZS00MWEwLWEwZmYtMTRmYmFmNjJjYjRj@[2603:c021:8010:4200:c400:e981:1f05:7331]:39305#chenchen shadowsocks
