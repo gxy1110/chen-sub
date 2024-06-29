@@ -1,4 +1,4 @@
 hy2://242f4443-dce4-4f7c-9002-3ab51c83ea63@[2401:b60:10:0a2c:0000:0000:0000:0001]:30001?insecure=1#hk-v6
-hy2://dea0a701-ab3e-41a0-a0ff-14fbaf62cb4d@[2603:c021:8010:4200:c400:e981:1f05:7331]:39304?mport=39335-39350&insecure=1#jp-v6
+hy2://dea0a701-ab3e-41a0-a0ff-14fbaf62cb4d@[2603:c021:8010:4200:c400:e981:1f05:7331]:39304?mport=39335-39345&insecure=1#jp-v6
 hy2://242f4443-dce4-4f7c-9002-3ab51c83ea63@5.102.96.7:30001?insecure=1#hk-v4
 vless://10d09779-8b2d-466e-8158-63514e2e953d@fbi.gov:443/?type=ws&encryption=none&host=bg.chenchenpazz.one&path=%2F%3Fed%3D2048&security=tls&sni=bg.chenchenpazz.one&fp=randomized#fbi
