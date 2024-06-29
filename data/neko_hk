@@ -1,8 +1,8 @@
 vless://242f4443-dce4-4f7c-9002-3ab51c83ea63@5.102.96.7:30000?security=reality&sni=addons.mozilla.org&fp=chrome&pbk=VCVC-LJmVGYzpYyC6j5of3Ea54O3hJXi9EddAep3Tkw&type=tcp&encryption=none#chenchen%20xtls-reality
-hy2://242f4443-dce4-4f7c-9002-3ab51c83ea63@5.102.96.7:30001?insecure=1#chenchen hysteria2
+hy2://242f4443-dce4-4f7c-9002-3ab51c83ea59@5.102.96.7:30001?insecure=1#chenchen hysteria2
 vless://242f4443-dce4-4f7c-9002-3ab51c83ea63@5.102.96.7:30002?security=reality&sni=addons.mozilla.org&alpn=h2&fp=chrome&pbk=VCVC-LJmVGYzpYyC6j5of3Ea54O3hJXi9EddAep3Tkw&type=http&encryption=none#chenchen%20h2-reality
 vless://242f4443-dce4-4f7c-9002-3ab51c83ea63@5.102.96.7:30003?security=reality&sni=addons.mozilla.org&fp=chrome&pbk=VCVC-LJmVGYzpYyC6j5of3Ea54O3hJXi9EddAep3Tkw&type=grpc&serviceName=grpc&encryption=none#chenchen%20grpc-reality
 vless://242f4443-dce4-4f7c-9002-3ab51c83ea63@[2401:b60:10:0a2c:0000:0000:0000:0001]:30000?security=reality&sni=addons.mozilla.org&fp=chrome&pbk=VCVC-LJmVGYzpYyC6j5of3Ea54O3hJXi9EddAep3Tkw&type=tcp&encryption=none#chenchen%20xtls-reality
-hy2://242f4443-dce4-4f7c-9002-3ab51c83ea63@[2401:b60:10:0a2c:0000:0000:0000:0001]:30001?insecure=1#chenchen hysteria2
+hy2://242f4443-dce4-4f7c-9002-3ab51c83ea59@[2401:b60:10:0a2c:0000:0000:0000:0001]:30001?insecure=1#chenchen hysteria2
 vless://242f4443-dce4-4f7c-9002-3ab51c83ea63@[2401:b60:10:0a2c:0000:0000:0000:0001]:30002?security=reality&sni=addons.mozilla.org&alpn=h2&fp=chrome&pbk=VCVC-LJmVGYzpYyC6j5of3Ea54O3hJXi9EddAep3Tkw&type=http&encryption=none#chenchen%20h2-reality
 vless://242f4443-dce4-4f7c-9002-3ab51c83ea63@[2401:b60:10:0a2c:0000:0000:0000:0001]:30003?security=reality&sni=addons.mozilla.org&fp=chrome&pbk=VCVC-LJmVGYzpYyC6j5of3Ea54O3hJXi9EddAep3Tkw&type=grpc&serviceName=grpc&encryption=none#chenchen%20grpc-reality
