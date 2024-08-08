@@ -1,108 +1,428 @@
 {
-  "outbounds": [
-    {
-      "tag": "hkv6 hysteria2",
-      "type": "hysteria2",
-      "server": "[2a0f:7803:fac2:1f80::1]",
-      "server_port": 30000,
-      "password": "bfecf451-7321-415a-9d69-a9ffe523c214",
-      "tls": {
-        "enabled": true,
-        "server_name": "[2a0f:7803:fac2:1f80::1]",
-        "insecure": true
+  "log": {
+    "disabled": false,
+    "level": "info",
+    "timestamp": true
+  },
+  "dns": {
+    "servers": [
+      {
+        "tag": "proxyDns",
+        "address": "8.8.8.8",
+        "detour": "select"
+      },
+      {
+        "tag": "localDns",
+        "address": "https://223.5.5.5/dns-query",
+        "detour": "direct"
+      },
+      {
+        "tag": "block",
+        "address": "rcode://success"
       }
-    },
-    {
-      "tag": "new_hk_hysteria2",
-      "type": "hysteria2",
-      "server": "141.11.132.165",
-      "server_port": 30000,
-      "password": "8a831e02-8395-400a-b39d-d579bf86270e",
-      "tls": {
-        "enabled": true,
-        "server_name": "141.11.132.165",
-        "insecure": true
+    ],
+    "rules": [
+      {
+        "domain": [
+          "ghproxy.com",
+          "cdn.jsdelivr.net",
+          "testingcf.jsdelivr.net"
+        ],
+        "server": "localDns"
+      },
+      {
+        "geosite": [
+          "category-ads-all"
+        ],
+        "server": "block"
+      },
+      {
+        "server": "localDns",
+        "outbound": "any",
+        "disable_cache": true
+      },
+      {
+        "geosite": [
+          "cn"
+        ],
+        "server": "localDns"
+      },
+      {
+        "server": "localDns",
+        "clash_mode": "direct"
+      },
+      {
+        "server": "proxyDns",
+        "clash_mode": "global"
+      },
+      {
+        "geosite": [
+          "geolocation-!cn"
+        ],
+        "server": "proxyDns"
       }
+    ],
+    "strategy": "ipv4_only"
+  },
+  "inbounds": [
+    {
+      "sniff": true,
+      "type": "mixed",
+      "listen": "127.0.0.1",
+      "listen_port": 1081
     },
     {
-      "tag": "new_hk_shadowsocks",
-      "type": "shadowsocks",
-      "server": "[2a0c:9a40:9204:1:4069:c7ff:fe40:6f50]",
-      "server_port": 30001,
-      "method": "aes-128-gcm",
-      "password": "8a831e02-8395-400a-b39d-d579bf86270e"
-    },
-    {
-      "tag": "new_hk_trojan",
-      "type": "trojan",
-      "server": "[2a0c:9a40:9204:1:4069:c7ff:fe40:6f50]",
-      "server_port": 30002,
-      "password": "8a831e02-8395-400a-b39d-d579bf86270e",
-      "tls": {
-        "enabled": true,
-        "server_name": "[2a0c:9a40:9204:1:4069:c7ff:fe40:6f50]",
-        "insecure": false
-      }
-    },
-    {
-      "tag": "jp_v6 hysteria2",
-      "type": "hysteria2",
-      "server": "[2603:c021:8010:4200:c400:e981:1f05:7331]",
-      "server_port": 39310,
-      "password": "0a742312-cbbb-4b91-b538-c7e5644c14d7",
-      "tls": {
-        "enabled": true,
-        "server_name": "[2603:c021:8010:4200:c400:e981:1f05:7331]",
-        "insecure": true
-      }
-    },
-    {
-      "tag": "jp_v6 shadowsocks",
-      "type": "shadowsocks",
-      "server": "[2603:c021:8010:4200:c400:e981:1f05:7331]",
-      "server_port": 39311,
-      "method": "aes-128-gcm",
-      "password": "0a742312-cbbb-4b91-b538-c7e5644c14d7"
-    },
-    {
-      "tag": "jp_v6 trojan",
-      "type": "trojan",
-      "server": "[2603:c021:8010:4200:c400:e981:1f05:7331]",
-      "server_port": 39312,
-      "password": "0a742312-cbbb-4b91-b538-c7e5644c14d7",
-      "tls": {
-        "enabled": true,
-        "server_name": "[2603:c021:8010:4200:c400:e981:1f05:7331]",
-        "insecure": true,
-        "utls": {
+      "stack": "system",
+      "auto_route": true,
+      "inet4_address": "172.19.0.1/30",
+      "mtu": 9000,
+      "sniff": true,
+      "strict_route": true,
+      "type": "tun",
+      "platform": {
+        "http_proxy": {
           "enabled": true,
-          "fingerprint": "random"
-        }
-      }
-    },
-    {
-      "tag": "hkv6 shadowsocks",
-      "type": "shadowsocks",
-      "server": "[2a0f:7803:fac2:1f80::1]",
-      "server_port": 30001,
-      "method": "aes-128-gcm",
-      "password": "bfecf451-7321-415a-9d69-a9ffe523c214"
-    },
-    {
-      "tag": "hk trojan",
-      "type": "trojan",
-      "server": "[2a0f:7803:fac2:1f80::1]",
-      "server_port": 30002,
-      "password": "bfecf451-7321-415a-9d69-a9ffe523c214",
-      "tls": {
-        "enabled": true,
-        "server_name": "[2a0f:7803:fac2:1f80::1]",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
+          "server": "127.0.0.1",
+          "server_port": 1081
         }
       }
     }
-  ]
+  ],
+  "outbounds": [
+    {
+      "tag": "select",
+      "type": "selector",
+      "outbounds": [
+        "auto",
+        "新hk shadowsocks",
+        "新hk trojan"
+      ]
+    },
+    {
+      "tag": "auto",
+      "type": "urltest",
+      "outbounds": [
+        "新hk shadowsocks",
+        "新hk trojan"
+      ],
+      "url": "https://www.gstatic.com/generate_204",
+      "interval": "1m",
+      "tolerance": 50
+    },
+    {
+      "tag": "🤖 OpenAI",
+      "type": "selector",
+      "outbounds": [
+        "direct",
+        "新hk shadowsocks",
+        "新hk trojan"
+      ]
+    },
+    {
+      "tag": "🌌 Google",
+      "type": "selector",
+      "outbounds": [
+        "新hk shadowsocks",
+        "新hk trojan"
+      ]
+    },
+    {
+      "tag": "📟 Telegram",
+      "type": "selector",
+      "outbounds": [
+        "新hk shadowsocks",
+        "新hk trojan"
+      ]
+    },
+    {
+      "tag": "🐦 Twitter",
+      "type": "selector",
+      "outbounds": [
+        "新hk shadowsocks",
+        "新hk trojan"
+      ]
+    },
+    {
+      "tag": "👤 Facebook",
+      "type": "selector",
+      "outbounds": [
+        "新hk shadowsocks",
+        "新hk trojan"
+      ]
+    },
+    {
+      "tag": "🛍️ Amazon",
+      "type": "selector",
+      "outbounds": [
+        "direct",
+        "新hk shadowsocks",
+        "新hk trojan"
+      ]
+    },
+    {
+      "tag": "🍎 Apple",
+      "type": "selector",
+      "outbounds": [
+        "direct",
+        "新hk shadowsocks",
+        "新hk trojan"
+      ]
+    },
+    {
+      "tag": "🧩 Microsoft",
+      "type": "selector",
+      "outbounds": [
+        "direct",
+        "新hk shadowsocks",
+        "新hk trojan"
+      ]
+    },
+    {
+      "tag": "🎮 Game",
+      "type": "selector",
+      "outbounds": [
+        "direct",
+        "新hk shadowsocks",
+        "新hk trojan"
+      ]
+    },
+    {
+      "tag": "📺 Bilibili",
+      "type": "selector",
+      "outbounds": [
+        "direct"
+      ]
+    },
+    {
+      "tag": "🎬 MediaVideo",
+      "type": "selector",
+      "outbounds": [
+        "direct",
+        "新hk shadowsocks",
+        "新hk trojan"
+      ]
+    },
+    {
+      "tag": "🌏 !cn",
+      "type": "selector",
+      "outbounds": [
+        "direct",
+        "新hk shadowsocks",
+        "新hk trojan"
+      ]
+    },
+    {
+      "tag": "🌏 cn",
+      "type": "selector",
+      "outbounds": [
+        "direct",
+        "select"
+      ]
+    },
+    {
+      "tag": "🛑 AdBlock",
+      "type": "selector",
+      "outbounds": [
+        "block",
+        "direct"
+      ]
+    },
+    {
+      "tag": "direct",
+      "type": "direct"
+    },
+    {
+      "tag": "block",
+      "type": "block"
+    },
+    {
+      "tag": "dns-out",
+      "type": "dns"
+    },
+    {
+      "server": "[2a0c",
+      "server_port": 30001,
+      "password": "8a831e02-8395-400a-b39d-d579bf86270e",
+      "method": "aes-128-gcm",
+      "tag": "新hk shadowsocks",
+      "type": "shadowsocks"
+    },
+    {
+      "server": "[2a0c",
+      "server_port": 9,
+      "tls": {
+        "enabled": true,
+        "insecure": true
+      },
+      "password": "8a831e02-8395-400a-b39d-d579bf86270e",
+      "tag": "新hk trojan",
+      "type": "trojan"
+    }
+  ],
+  "route": {
+    "geoip": {
+      "download_url": "https://github.com/soffchen/sing-geoip/releases/latest/download/geoip.db",
+      "download_detour": "select"
+    },
+    "geosite": {
+      "download_url": "https://github.com/soffchen/sing-geosite/releases/latest/download/geosite.db",
+      "download_detour": "select"
+    },
+    "rules": [
+      {
+        "protocol": "dns",
+        "outbound": "dns-out"
+      },
+      {
+        "network": "udp",
+        "port": 443,
+        "outbound": "block"
+      },
+      {
+        "clash_mode": "direct",
+        "outbound": "direct"
+      },
+      {
+        "clash_mode": "global",
+        "outbound": "select"
+      },
+      {
+        "domain": [
+          "v2rayse.com",
+          "cfmem.com",
+          "vpnse.org",
+          "cff.pw",
+          "tt.vg"
+        ],
+        "outbound": "select"
+      },
+      {
+        "domain": [
+          "clash.razord.top",
+          "yacd.metacubex.one",
+          "yacd.haishan.me",
+          "d.metacubex.one"
+        ],
+        "outbound": "direct"
+      },
+      {
+        "geosite": [
+          "openai"
+        ],
+        "outbound": "🤖 OpenAI"
+      },
+      {
+        "geosite": [
+          "google",
+          "github"
+        ],
+        "geoip": [
+          "google"
+        ],
+        "outbound": "🌌 Google"
+      },
+      {
+        "geosite": [
+          "telegram"
+        ],
+        "geoip": [
+          "telegram"
+        ],
+        "outbound": "📟 Telegram"
+      },
+      {
+        "geosite": [
+          "twitter"
+        ],
+        "geoip": [
+          "twitter"
+        ],
+        "outbound": "🐦 Twitter"
+      },
+      {
+        "geosite": [
+          "facebook",
+          "instagram"
+        ],
+        "geoip": [
+          "facebook"
+        ],
+        "outbound": "👤 Facebook"
+      },
+      {
+        "geosite": [
+          "amazon"
+        ],
+        "outbound": "🛍️ Amazon"
+      },
+      {
+        "geosite": [
+          "apple-cn",
+          "apple"
+        ],
+        "outbound": "🍎 Apple"
+      },
+      {
+        "geosite": [
+          "microsoft"
+        ],
+        "outbound": "🧩 Microsoft"
+      },
+      {
+        "geosite": [
+          "category-games"
+        ],
+        "outbound": "🎮 Game"
+      },
+      {
+        "geosite": [
+          "bilibili"
+        ],
+        "outbound": "📺 Bilibili"
+      },
+      {
+        "geosite": [
+          "tiktok",
+          "netflix",
+          "hbo",
+          "disney",
+          "primevideo"
+        ],
+        "geoip": [
+          "netflix"
+        ],
+        "outbound": "🎬 MediaVideo"
+      },
+      {
+        "geosite": [
+          "geolocation-!cn"
+        ],
+        "outbound": "🌏 !cn"
+      },
+      {
+        "geosite": [
+          "cn"
+        ],
+        "geoip": [
+          "private",
+          "cn"
+        ],
+        "outbound": "🌏 cn"
+      },
+      {
+        "geosite": [
+          "category-ads-all"
+        ],
+        "outbound": "🛑 AdBlock"
+      }
+    ],
+    "auto_detect_interface": true,
+    "final": "select"
+  },
+  "experimental": {
+    "cache_file": {
+      "enabled": true,
+      "path": "cache.db"
+    }
+  }
 }
