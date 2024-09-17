@@ -10,3 +10,6 @@ trojan://bfecf451-7321-415a-9d69-a9ffe523c214@89.185.26.7:30002?security=tls&all
 ss://YWVzLTEyOC1nY206ZDBjZGFiZDctY2Q2Yy00MjY3LWI0MDktOGVkYjhlMWNlY2Rk@[2a0f:7803:fac2:1f80::1]:30001#%E9%A6%99%E6%B8%AFss%20v6
 trojan://bfecf451-7321-415a-9d69-a9ffe523c214@[2a0f:7803:fac2:1f80::1]:30002?security=tls&allowInsecure=1&type=tcp#%E9%A6%99%E6%B8%AFtrojan%20v6
 hy2://bfecf451-7321-415a-9d69-a9ffe523c214@[2a0f:7803:fac2:1f80::1]:30000?insecure=1#%E9%A6%99%E6%B8%AFhy2%20v6
+hysteria2://d0cdabd7-cd6c-4267-b409-8edb8e1cecdd@8.216.94.203:30000/?insecure=1#%E9%98%BF%E9%87%8C%E4%BA%91_hysteria2
+ss://YWVzLTEyOC1nY206ZDBjZGFiZDctY2Q2Yy00MjY3LWI0MDktOGVkYjhlMWNlY2Rk@8.216.94.203:30001#%E9%98%BF%E9%87%8C%E4%BA%91%20ss
+trojan://d0cdabd7-cd6c-4267-b409-8edb8e1cecdd@8.216.94.203:30002?security=tls&fp=random&allowInsecure=1&type=tcp&headerType=none#%E9%98%BF%E9%87%8C%E4%BA%91%20trojan
