@@ -1,3 +1,9 @@
+hy2://d0cdabd7-cd6c-4267-b409-8edb8e1cecdd@47.239.125.164:30000?mport=31000-32000&insecure=1#AliHK hysteria2
+ss://YWVzLTEyOC1nY206ZDBjZGFiZDctY2Q2Yy00MjY3LWI0MDktOGVkYjhlMWNlY2Rk@47.239.125.164:30001#AliHK shadowsocks
+trojan://d0cdabd7-cd6c-4267-b409-8edb8e1cecdd@47.239.125.164:30002?security=tls&allowInsecure=1&fp=random&type=tcp#AliHK trojan
+hy2://d0cdabd7-cd6c-4267-b409-8edb8e1cecdd@8.216.94.203:30000?mport=31000-32000&insecure=1#AliJP hysteria2
+ss://YWVzLTEyOC1nY206ZDBjZGFiZDctY2Q2Yy00MjY3LWI0MDktOGVkYjhlMWNlY2Rk@8.216.94.203:30001#AliJP shadowsocks
+trojan://d0cdabd7-cd6c-4267-b409-8edb8e1cecdd@8.216.94.203:30002?security=tls&allowInsecure=1&fp=random&type=tcp#AliJP trojan
 ss://YWVzLTEyOC1nY206OGE4MzFlMDItODM5NS00MDBhLWIzOWQtZDU3OWJmODYyNzBl@tunnel-07312159.520300.xyz:14624#%E5%B9%BF%E5%B7%9E1.5x
 ss://YWVzLTEyOC1nY206OGE4MzFlMDItODM5NS00MDBhLWIzOWQtZDU3OWJmODYyNzBl@tunnel-08301515.520300.xyz:12140#%E4%B8%8A%E6%B5%B71.5x
 ss://YWVzLTEyOC1nY206OGE4MzFlMDItODM5NS00MDBhLWIzOWQtZDU3OWJmODYyNzBl@gdhk1-07312200.520300.xyz:34175#%E5%B9%BF%E5%B7%9E10x
@@ -31,6 +37,3 @@ trojan://d0cdabd7-cd6c-4267-b409-8edb8e1cecdd@89.185.26.101:30002?security=tls&a
 hysteria2://d0cdabd7-cd6c-4267-b409-8edb8e1cecdd@[2a0f:7803:fac2:f109::1]:30000/?alpn=h3&insecure=1#%23%23hysteria2
 ss://YWVzLTEyOC1nY206ZDBjZGFiZDctY2Q2Yy00MjY3LWI0MDktOGVkYjhlMWNlY2Rk@[2a0f:7803:fac2:f109::1]:30001#%23%23ss
 trojan://d0cdabd7-cd6c-4267-b409-8edb8e1cecdd@[2a0f:7803:fac2:f109::1]:30002?security=tls&allowInsecure=1&type=tcp&headerType=none#%23%23trojan
-hysteria2://d0cdabd7-cd6c-4267-b409-8edb8e1cecdd@8.216.94.203:30000/?insecure=1#%E9%98%BF%E9%87%8C%E4%BA%91_hysteria2
-ss://YWVzLTEyOC1nY206ZDBjZGFiZDctY2Q2Yy00MjY3LWI0MDktOGVkYjhlMWNlY2Rk@8.216.94.203:30001#%E9%98%BF%E9%87%8C%E4%BA%91%20ss
-trojan://d0cdabd7-cd6c-4267-b409-8edb8e1cecdd@8.216.94.203:30002?security=tls&fp=random&allowInsecure=1&type=tcp&headerType=none#%E9%98%BF%E9%87%8C%E4%BA%91%20trojan
