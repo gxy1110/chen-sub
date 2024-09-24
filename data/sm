@@ -31,9 +31,9 @@ ss://YWVzLTEyOC1nY206OGE4MzFlMDItODM5NS00MDBhLWIzOWQtZDU3OWJmODYyNzBl@gdhk1-0731
 ss://YWVzLTEyOC1nY206OGE4MzFlMDItODM5NS00MDBhLWIzOWQtZDU3OWJmODYyNzBl@[2409:8c54:1841:2008:0:1:0:619]:34175#%E5%B9%BF%E5%B7%9E10x%20v6
 ss://YWVzLTEyOC1nY206OGE4MzFlMDItODM5NS00MDBhLWIzOWQtZDU3OWJmODYyNzBl@tunnel-07312159.520300.xyz:14624#%E5%B9%BF%E5%B7%9E1.5x
 ss://YWVzLTEyOC1nY206OGE4MzFlMDItODM5NS00MDBhLWIzOWQtZDU3OWJmODYyNzBl@tunnel-08301515.520300.xyz:12140#%E4%B8%8A%E6%B5%B71.5x
-hysteria2://d0cdabd7-cd6c-4267-b409-8edb8e1cecdd@89.185.26.101:30000/?alpn=h3&insecure=1#%23%23hysteria2
+hy2://d0cdabd7-cd6c-4267-b409-8edb8e1cecdd@89.185.26.101:30000?insecure=1#%23%23hysteria2
 ss://YWVzLTEyOC1nY206ZDBjZGFiZDctY2Q2Yy00MjY3LWI0MDktOGVkYjhlMWNlY2Rk@89.185.26.101:30001#%23%23ss
 trojan://d0cdabd7-cd6c-4267-b409-8edb8e1cecdd@89.185.26.101:30002?security=tls&allowInsecure=1&type=tcp&headerType=none#%23%23trojan
-hysteria2://d0cdabd7-cd6c-4267-b409-8edb8e1cecdd@[2a0f:7803:fac2:f109::1]:30000/?alpn=h3&insecure=1#%23%23hysteria2
+hy2://d0cdabd7-cd6c-4267-b409-8edb8e1cecdd@[2a0f:7803:fac2:f109::1]:30000?insecure=1#%23%23hysteria2
 ss://YWVzLTEyOC1nY206ZDBjZGFiZDctY2Q2Yy00MjY3LWI0MDktOGVkYjhlMWNlY2Rk@[2a0f:7803:fac2:f109::1]:30001#%23%23ss
 trojan://d0cdabd7-cd6c-4267-b409-8edb8e1cecdd@[2a0f:7803:fac2:f109::1]:30002?security=tls&allowInsecure=1&type=tcp&headerType=none#%23%23trojan
