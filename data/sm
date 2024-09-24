@@ -34,6 +34,6 @@ ss://YWVzLTEyOC1nY206OGE4MzFlMDItODM5NS00MDBhLWIzOWQtZDU3OWJmODYyNzBl@tunnel-083
 hy2://d0cdabd7-cd6c-4267-b409-8edb8e1cecdd@89.185.26.101:30000?mport=31000-32000&insecure=1#**# hysteria2
 ss://YWVzLTEyOC1nY206ZDBjZGFiZDctY2Q2Yy00MjY3LWI0MDktOGVkYjhlMWNlY2Rk@89.185.26.101:30001#%23%23ss
 trojan://d0cdabd7-cd6c-4267-b409-8edb8e1cecdd@89.185.26.101:30002?security=tls&allowInsecure=1&type=tcp&headerType=none#%23%23trojan
-hy2://d0cdabd7-cd6c-4267-b409-8edb8e1cecdd@[2a0f:7803:fac2:f109::1]:30000?mport=31000-32000&insecure=1#**# hysteria2
+hy2://d0cdabd7-cd6c-4267-b409-8edb8e1cecdd@[2a0f:7803:fac2:f109::1]:30000?mport=31000-32000&insecure=1#**# hysteria2 v6
 ss://YWVzLTEyOC1nY206ZDBjZGFiZDctY2Q2Yy00MjY3LWI0MDktOGVkYjhlMWNlY2Rk@[2a0f:7803:fac2:f109::1]:30001#%23%23ss
 trojan://d0cdabd7-cd6c-4267-b409-8edb8e1cecdd@[2a0f:7803:fac2:f109::1]:30002?security=tls&allowInsecure=1&type=tcp&headerType=none#%23%23trojan
