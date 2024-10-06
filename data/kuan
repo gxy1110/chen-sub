@@ -1,9 +1,6 @@
-hy2://0a742312-cbbb-4b91-b538-c7e5644c14d7@[2603:c021:8010:4200:c400:e981:1f05:7331]:39310?mport=39320-39345&insecure=1#%E6%97%A5%E6%9C%AChysteria2%20v6
-ss://YWVzLTEyOC1nY206MGE3NDIzMTItY2JiYi00YjkxLWI1MzgtYzdlNTY0NGMxNGQ3@[2603:c021:8010:4200:c400:e981:1f05:7331]:39311#%E6%97%A5%E6%9C%ACshadowsocks%20v6
-trojan://0a742312-cbbb-4b91-b538-c7e5644c14d7@[2603:c021:8010:4200:c400:e981:1f05:7331]:39312?security=tls&allowInsecure=1&fp=random&type=tcp#%E6%97%A5%E6%9C%AC%20trojan%20v6
-hy2://0a742312-cbbb-4b91-b538-c7e5644c14d7@132.145.126.148:39310?mport=39320-39345&insecure=1#%E6%97%A5%E6%9C%AChysteria2
-ss://YWVzLTEyOC1nY206MGE3NDIzMTItY2JiYi00YjkxLWI1MzgtYzdlNTY0NGMxNGQ3@132.145.126.148:39311#%E6%97%A5%E6%9C%ACshadowsocks
-trojan://0a742312-cbbb-4b91-b538-c7e5644c14d7@132.145.126.148:39312?security=tls&allowInsecure=1&fp=random&type=tcp#%E6%97%A5%E6%9C%AC%20trojan
+hy2://0a742312-cbbb-4b91-b538-c7e5644c14d7@jp.chenchen.one:57260?mport=57268-57285&insecure=1#jp hysteria2
+ss://YWVzLTEyOC1nY206MGE3NDIzMTItY2JiYi00YjkxLWI1MzgtYzdlNTY0NGMxNGQ3@jp.chenchen.one:57261#jp shadowsocks
+trojan://0a742312-cbbb-4b91-b538-c7e5644c14d7@jp.chenchen.one:57262?security=tls&allowInsecure=1&fp=random&type=tcp#jp trojan
 hy2://bfecf451-7321-415a-9d69-a9ffe523c214@89.185.26.7:30000?insecure=1#%E9%A6%99%E6%B8%AFhy2
 ss://YWVzLTEyOC1nY206ZDBjZGFiZDctY2Q2Yy00MjY3LWI0MDktOGVkYjhlMWNlY2Rk@89.185.26.7:30001#%E9%A6%99%E6%B8%AFss
 trojan://bfecf451-7321-415a-9d69-a9ffe523c214@89.185.26.7:30002?security=tls&allowInsecure=1&type=tcp#%E9%A6%99%E6%B8%AFtrojan
