@@ -1,12 +1,12 @@
 hy2://d0cdabd7-cd6c-4267-b409-8edb8e1cecdd@47.239.125.164:30000?mport=31000-32000&insecure=1#AliHK hysteria2
 ss://YWVzLTEyOC1nY206ZDBjZGFiZDctY2Q2Yy00MjY3LWI0MDktOGVkYjhlMWNlY2Rk@47.239.125.164:30001#AliHK shadowsocks
 trojan://d0cdabd7-cd6c-4267-b409-8edb8e1cecdd@47.239.125.164:30002?security=tls&allowInsecure=1&fp=random&type=tcp#AliHK trojan
-hy2://d0cdabd7-cd6c-4267-b409-8edb8e1cecdd@8.216.94.203:30000?mport=31000-32000&insecure=1#AliJP hysteria2
+hy2://d1cdabd7-cd6c-4267-b409-8edb8e1cecdd@8.216.94.203:30000?mport=31000-32000&insecure=1#AliJP hysteria2
 ss://YWVzLTEyOC1nY206ZDBjZGFiZDctY2Q2Yy00MjY3LWI0MDktOGVkYjhlMWNlY2Rk@8.216.94.203:30001#AliJP shadowsocks
-trojan://d0cdabd7-cd6c-4267-b409-8edb8e1cecdd@8.216.94.203:30002?security=tls&allowInsecure=1&fp=random&type=tcp#AliJP trojan
-hy2://0a742312-cbbb-4b91-b538-c7e5644c14d7@jp.chenchen.one:57260?mport=57268-57285&insecure=1#jp hysteria2
-ss://YWVzLTEyOC1nY206MGE3NDIzMTItY2JiYi00YjkxLWI1MzgtYzdlNTY0NGMxNGQ3@jp.chenchen.one:57261#jp shadowsocks
-trojan://0a742312-cbbb-4b91-b538-c7e5644c14d7@jp.chenchen.one:57262?security=tls&allowInsecure=1&fp=random&type=tcp#jp trojan
+trojan://d1cdabd7-cd6c-4267-b409-8edb8e1cecdd@8.216.94.203:30002?security=tls&allowInsecure=1&fp=random&type=tcp#AliJP trojan
+hy2://1a742312-cbbb-4b91-b538-c7e5644c14d7@jp.chenchen.one:57260?mport=57268-57285&insecure=1#jp hysteria2
+ss://YWVzLTEyOC1nY206MWE3NDIzMTItY2JiYi00YjkxLWI1MzgtYzdlNTY0NGMxNGQ3@jp.chenchen.one:57261#jp%20shadowsocks
+trojan://1a742312-cbbb-4b91-b538-c7e5644c14d7@jp.chenchen.one:57262?security=tls&fp=random&allowInsecure=1&type=tcp&headerType=none#jp%20trojan
 ss://YWVzLTEyOC1nY206ZDFjZGFiZDctY2Q2Yy00MjY3LWI0MDktOGVkYjhlMWNlY2Rk@shhk1-08051752.520300.xyz:54605#%2A%E6%B2%AA%E6%B8%AF%20IEPL10x
 ss://YWVzLTEyOC1nY206ZDBjZGFiZDctY2Q2Yy00MjY3LWI0MDktOGVkYjhlMWNlY2Rk@gdhk1-07312200.520300.xyz:37152#%E5%B9%BF%E6%B8%AF%20IEPL%2010x%204%2B6
 ss://YWVzLTEyOC1nY206ZDBjZGFiZDctY2Q2Yy00MjY3LWI0MDktOGVkYjhlMWNlY2Rk@shhk1-08051752.520300.xyz:56468#%E6%B2%AA%E6%B8%AF%20IEPL%2010x
